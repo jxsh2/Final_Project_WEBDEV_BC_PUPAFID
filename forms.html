@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./styles/forms.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <img class="pup-logo" src="./images/pup-logo.png" alt="PUP Logo" width="65px" height="65px">
+                <span>Polytechnic University <br> of the Philippines</span>
+            </div>
+            <div class="options-container">
+                <ul class="options">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contacts.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="instruct-container">
+        <h1>IMPORTANT</h1>
+        <ul>
+            <li>Make sure that you input correct details.</li>
+            <li>Ensure all required fields are filled out before proceeding to the next step.</li>
+            <li>Click "Next" to move to the following step, and "Previous" to return to the previous step if needed.</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <form id="applicationForm">
+            <fieldset id="step1">
+                <legend>Step 1:</legend>
+                <label for="reason">Reason for ID Application:</label>
+                <select id="reason" name="reason" required>
+                    <option value="">Select one...</option>
+                    <option value="Transferee">Transferee</option>
+                    <option value="Old ID">Old ID</option>
+                    <option value="Shiftee">Shiftee</option>
+                    <option value="Late Filing">Late Filing</option>
+                    <option value="Damaged">Damaged</option>
+                    <option value="Correction of Entry">Correction of Entry</option>
+                </select>
+                <br>
+                <label for="affiliation">Affiliation:</label>
+                <select id="affiliation" name="affiliation" required>
+                    <option value="">Select one...</option>
+                    <option value="SHS">SHS</option>
+                    <option value="LHS">LHS</option>
+                    <option value="Undergrad">Undergrad</option>
+                    <option value="Institute of Technology">Institute of Technology</option>
+                    <option value="College of Law">College of Law</option>
+                    <option value="Open University">Open University</option>
+                    <option value="Graduate School">Graduate School</option>
+                </select>
+                <br>
+                <button type="button" class="nextButton">Next</button>
+            </fieldset>
+
+            <fieldset id="step2">
+
+                <legend>Step 2: ID Information</legend>
+                <label for="studentNumber">Student Number:</label>
+                <input type="text" id="studentNumber" name="studentNumber" required>
+                <br>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <br>
+
+                <label for="middleName">Middle Name:</label>
+                <input type="text" id="middleName" name="middleName">
+                <br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select...</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+                <br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+
+                <label for="college">College:</label>
+                <input type="text" id="college" name="college" required>
+                <br>
+
+                <label for="course-year-sec">Course, Yr & Section <span style="font-size: 12px;">(Ex. BS Computer Science / 3 / 4 or STEM / Grade 11 / 3)</span>:</label>
+                <input type="text" id="course-year-sec" name="course-year-sec" required>
+                <br>
+
+                <label for="homeAddress">Home Address:</label>
+                <textarea id="homeAddress" name="homeAddress" rows="4" required></textarea>
+                <br>
+
+                <label for="phone">Phone/Mobile No. <span style="font-size: 12px;">(Ex. 09923253759)</span>:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                <br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <button type="button" class="prevButton">Previous</button>
+                <button type="button" class="nextButton">Next</button>
+                
+            </fieldset>
+
+            <fieldset id="step3">
+                <legend>Step 3: Emergency Contact</legend>
+                <label for="emergencyContactName">Complete Name:</label>
+                <input type="text" id="emergencyContactName" name="emergencyContactName" required>
+                <br>
+                <label for="emergencyContactPhone">Phone/Mobile No.:</label>
+                <input type="tel" id="emergencyContactPhone" name="emergencyContactPhone" pattern="[0-9]{10}" required>
+                <br>
+                <label for="emergencyContactAddress">Address:</label>
+                <textarea id="emergencyContactAddress" name="emergencyContactAddress" rows="4" required></textarea>
+                <br>
+                <button type="button" class="prevButton">Previous</button>
+                <button type="submit">Submit Application</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <div id="popup" class="modal">
+        <div class="modal-content">
+            <img src="./images/checked.png" alt="checkedicon">
+            <span class="close-button">&times;</span>
+            <h2>Application Successful</h2>
+            <p>You can claim your ID after 7 business days</p>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./js/forms.js"></script>
+</body>
+
+</html>
+ 

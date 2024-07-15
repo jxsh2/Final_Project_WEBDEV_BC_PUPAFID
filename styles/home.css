@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+*{
+    margin: 0;
+    overflow: hidden;
+}
+
+.navbar{
+    background: linear-gradient(to bottom, maroon 10%, white 0%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .3);
+    padding-right: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.navbar-container{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo-container{
+    background-color: white;
+}
+.pup-logo{
+    margin-right: 8px;
+}
+
+.options{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.options a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    color:#800000 ;
+    transition: background-color 0.5s ease; 
+}
+
+.options a:hover{
+    background-color: rgba(128, 0, 0, 0.2);
+
+}
+
+
+.logo-container{
+    font-family: "Judson", serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    color:#800000 ;
+    font-size: 25px;
+    align-items: center;
+}
+
+
+/* end of navbar design*/
+
+.content{
+    background-image: url('../images/pup-bg3.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: calc(100vh - 75px); 
+    overflow: hidden;
+    margin-top:2px; 
+}
+
+.content-container {
+    width:750px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    left: 0px;
+    font-size: 20px; 
+    font-family: "Inter", sans-serif; 
+    color: black; 
+    position: absolute;
+    top: 25%;
+    padding: 20px;
+    height: 330px;
+
+}
+
+
+.title-container{
+    text-align: center; 
+    color: #FFDF00;
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom: 20px;
+}
+.title-acr{
+   font-size: 70px;
+   font-weight: bolder;
+}
+
+.title-full{
+    font-size: 25px;
+}
+
+
+.welc-text{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-weight:300;
+}
+
+button{
+    background-color:rgba(255, 255, 255, 0);
+    padding: 15px;
+    color:white;
+    font-family: "Inter", sans-serif; 
+    font-weight:bold;
+    border-radius: 7px;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: background-color 0.1s ease; 
+}
+
+button:hover{
+    background-color:#980000 ;
+    border: none;
+}
+
+.tagline {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    color: white;
+    font-style: italic;
+    font-family: "Judson", serif;
+    font-weight:bold initial;
+    background-color:#800000 ;
+    padding: 20px;
+    font-size: 25px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
