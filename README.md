@@ -2,6 +2,8 @@
 
 *Description: This website was created as a final project. I only did the backend of this website*
 
+**🌐 Live Demo: https://jxsh2.github.io/Final_Project_WEBDEV_BC_PUPAFID**
+
 **🛠️ Tech Used**
 
 [![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -10,5 +12,3 @@
 [![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
 
 ![idform](https://github.com/user-attachments/assets/ed6958f0-1920-4f9d-bd2d-201a48145d2f)
-
-🌐 Live Demo: https://jxsh2.github.io/Final_Project_WEBDEV_BC_PUPAFID/
