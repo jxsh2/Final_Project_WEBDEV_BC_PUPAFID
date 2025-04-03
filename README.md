@@ -1,6 +1,6 @@
 # PUPAFID FORM
 
-*Description: This website was created as a final project. I only did the backend of this website*
+*Description: This website was developed as a final project. I was responsible for building the backend.*
 
 **🌐 Live Demo: https://jxsh2.github.io/Final_Project_WEBDEV_BC_PUPAFID**
 
